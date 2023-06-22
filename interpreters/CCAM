@@ -22,7 +22,7 @@ else
 	memory={}
 	function ChkMem(addr)
 		if #memory > addr then
-			return memory(addr)
+			return memory[addr]
 		else
 			for a=#memory,addr do
 				memory[a+1]=0
