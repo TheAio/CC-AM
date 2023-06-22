@@ -42,7 +42,7 @@ else
 		elseif inst == "ADD" then
 			memory[tonumber(string.sub(code,9,9))] = ChkMem(tonumber(string.sub(code,7,7))) + ChkMem(tonumber(string.sub(code,5,5)))
 		elseif inst == "SUB" then
-			memory[tonumber(string.sub(code,9,9))] = ChkMem(tonumber(string.sub(code,7,7))) + ChkMem(tonumber(string.sub(code,5,5)))
+			memory[tonumber(string.sub(code,9,9))] = ChkMem(tonumber(string.sub(code,7,7))) - ChkMem(tonumber(string.sub(code,5,5)))
 		elseif inst == "MUL" then
 			memory[tonumber(string.sub(code,9,9))] = ChkMem(tonumber(string.sub(code,7,7))) * ChkMem(tonumber(string.sub(code,5,5)))
 		elseif inst == "SET" then
