@@ -49,7 +49,7 @@ else
 		elseif inst == "SAY" then
 			print(string.sub(code,5,string.len(code)))
 		elseif inst == "WRN" then
-			printerror(string.sub(code,5,string.len(code)))
+			printError(string.sub(code,5,string.len(code)))
 		elseif inst == "TEL" then
 			print(ChkMem(tonumber(string.sub(code,5,5))))
 		elseif inst == "SLP" then
