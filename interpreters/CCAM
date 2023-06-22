@@ -20,6 +20,16 @@ else
 	f.close()
 	line=1
 	memory={}
+	function ChkMem(addr)
+		if #memory > addr then
+			return memory(addr)
+		else
+			for a=#memory,addr do
+				memory[a+1]=0
+			end
+			return memory(addr)
+		end
+	end
 	while true do
 		code=file[line]
 		inst=string.sub(code,1,3)
