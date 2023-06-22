@@ -21,6 +21,8 @@ SAY S - Prompt the user with the string S (any length)
 
 WRN S - Prompt the user with the string S (any length) and wait for the user to press enter
 
+TEL X - Prompt the user with the value stored at location X
+
 SLP X - sleep for value x seconds
 
 CHK XXXX F - Make sure file F (any length) exists and if so jump to line XXXX
