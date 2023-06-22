@@ -1,7 +1,7 @@
 AM interprates instructions line by line, so every new line is a new instruction.
 The instructions avaible are:
 
-JMP X Y ZZZ - Jump to line ZZZZ if X is equal to Y
+JMP X Y ZZZZ - Jump to line ZZZZ if X is equal to Y
 
 STR X Y - Store intager X at location Y
 
