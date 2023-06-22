@@ -1,0 +1,21 @@
+WRN this is an example of a AM script.
+SAY This script does nothing usefull, it is simply a demo of what AM script can do!
+STR 3 1
+SLP 1
+ASK 2 Enter a number between 0 and 9
+ADD 2 2 3
+SUB 2 2 4
+JMP 3 1 0019
+MUL 2 2 5
+SAY X + X =
+TEL 3
+SAY X - X =
+TEL 4
+SAY X * X =
+TEL 5
+SET 3 1
+SLP 1
+CHK 0008 example.AM
+WRN That's it for this demo, but before we quit. These are files:
+EXE ls
+END
