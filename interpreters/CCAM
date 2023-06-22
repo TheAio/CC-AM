@@ -61,5 +61,6 @@ else
 		elseif inst == "END" then
 			return true
 		end
+	line=line+1
 	end
 end
