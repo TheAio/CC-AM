@@ -60,5 +60,6 @@ else
 			end
 		elseif inst == "END" then
 			return true
+		end
 	end
 end
