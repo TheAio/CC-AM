@@ -35,7 +35,7 @@ else
 		inst=string.sub(code,1,3)
 		if inst == "JMP" then
 			if ChkMem(tonumber(string.sub(code,5,5))) == ChkMem(tonumber(string.sub(code,7,7))) then
-				line = tonumber(string.sub(code,string.len(code)-4,string.len(code)))
+				line = tonumber(string.sub(code,string.len(code)-4,string.len(code)))-1
 			end
 		elseif inst == "STR" then
 			memory[tonumber(string.sub(code,7,7))] = tonumber(string.sub(code,5,5))
@@ -66,7 +66,7 @@ else
 			sleep(ChkMem(tonumber(string.sub(code,5,5))))
 		elseif inst == "CHK" then
 			if fs.exists(string.sub(code,10,string.len(code))) then
-				line = tonumber(string.sub(code,5,8))
+				line = tonumber(string.sub(code,5,8))-1
 			end
 		elseif inst == "END" then
 			return true
