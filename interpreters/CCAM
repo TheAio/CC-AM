@@ -27,7 +27,7 @@ else
 			for a=#memory,addr do
 				memory[a+1]=0
 			end
-			return memory(addr)
+			return memory[addr]
 		end
 	end
 	while true do
